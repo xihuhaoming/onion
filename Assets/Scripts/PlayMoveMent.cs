@@ -8,10 +8,11 @@ public class PlayMoveMent : MonoBehaviour
     public float speed;
     public Vector3 playerInput;
     private float _noInputTime;
+    private bool _isMoving;
+    
 
     private Animator _anim;
     public GameObject Enemy;
-    private SpriteRenderer _spriteRenderer;
     
     public Vector3 enemyPositon = new Vector3(-20, 8, 5);
     public Vector3 enemyQuaternion = new Vector3(0, 0, 60);
